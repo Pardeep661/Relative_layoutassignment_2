@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Relative_layout-assignment_2</string>
+    <string name="show_Attendence">Show\nattendence</string>
+    <string name="Mark_Attendence">Mark\nAttendence</string>
+    <string name="home_work">home\nwork</string>
+    <string name="Gallery">Gallery</string>
+    <string name="Notice">Notice</string>
+    <string name="About">About</string>
+    <string name="Pay_fee">Pay fee</string>
+</resources>

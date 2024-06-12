@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#3949AB">
+
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+
+        <ImageView
+            android:layout_width="348dp"
+            android:layout_height="294dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/image">
+
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/show_attendence"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:background="@color/black"
+        android:layout_centerInParent="true"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_Attendence"
+            android:gravity="center"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mark_attendence"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:background="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/show_attendence"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Mark_Attendence"
+                android:gravity="center"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_work"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:background="@color/black"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/show_attendence"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/home_work"
+                android:gravity="center"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="20dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/gallery"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/show_attendence"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Gallery"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25sp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+        android:id="@+id/Notice"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/gallery"
+        android:layout_below="@id/show_attendence"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Notice"
+            android:layout_gravity="center|left"
+            android:layout_marginStart="25sp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/About"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/gallery"
+            android:layout_below="@id/gallery"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/About"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="25sp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@id/About"
+        android:layout_below="@id/gallery"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Pay_fee"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="25sp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
